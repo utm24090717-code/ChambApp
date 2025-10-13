@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChambApp | Panel del Trabajador</title>
+  <link rel="stylesheet" href="/css/dashboard_worker.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">ChambApp</div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Tareas</a></li>
+        <li><a href="#">Chat</a></li>
+        <li><a href="#">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="search-section">
+      <h2>Buscar chambas disponibles</h2>
+      <p>Encuentra tareas que se adapten a tus habilidades y disponibilidad.</p>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar por palabra clave (ej. plomería, limpieza...)">
+        <button class="btn-search">Buscar</button>
+      </div>
+
+      <div class="filter-bar">
+        <select>
+          <option value="">Categoría</option>
+          <option value="plomería">Plomería</option>
+          <option value="electricidad">Electricidad</option>
+          <option value="limpieza">Limpieza</option>
+          <option value="pintura">Pintura</option>
+        </select>
+
+        <select>
+          <option value="">Ordenar por</option>
+          <option value="nuevo">Más recientes</option>
+          <option value="precio-alto">Mayor pago</option>
+          <option value="precio-bajo">Menor pago</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="task-list">
+      <h2>Tareas disponibles</h2>
+
+      <div class="task-card">
+        <h3>Instalar lámpara nueva</h3>
+        <p>Necesito a alguien que pueda instalar una lámpara de techo en mi sala.</p>
+        <div class="task-info">
+          <span>Pago: <strong>$200 MXN</strong></span>
+          <span>Ubicación: CDMX</span>
+        </div>
+        <button class="btn-accept">Aceptar tarea</button>
+      </div>
+
+      <div class="task-card">
+        <h3>Reparar fuga de agua</h3>
+        <p>Se requiere plomero para arreglar fuga en el baño. Material incluido.</p>
+        <div class="task-info">
+          <span>Pago: <strong>$350 MXN</strong></span>
+          <span>Ubicación: Puebla</span>
+        </div>
+        <button class="btn-accept">Aceptar tarea</button>
+      </div>
+
+      <div class="task-card">
+        <h3>Limpieza de oficina</h3>
+        <p>Busco persona responsable para limpieza general de oficina pequeña.</p>
+        <div class="task-info">
+          <span>Pago: <strong>$500 MXN</strong></span>
+          <span>Ubicación: Guadalajara</span>
+        </div>
+        <button class="btn-accept">Aceptar tarea</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ChambApp — Conectando talento con oportunidades.</p>
+  </footer>
+</body>
+</html

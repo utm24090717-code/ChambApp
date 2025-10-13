@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChambApp | Mi Panel</title>
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">ChambApp</div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Mis tareas</a></li>
+        <li><a href="#">Chat</a></li>
+        <li><a href="#">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="task-form">
+      <h2>Publicar nueva tarea</h2>
+      <p>Describe la tarea que necesitas y cuánto ofreces por ella.</p>
+
+      <form>
+        <label for="task-title">Título de la tarea</label>
+        <input type="text" id="task-title" placeholder="Ejemplo: Arreglar fuga de agua" required>
+
+        <label for="task-desc">Descripción</label>
+        <textarea id="task-desc" rows="4" placeholder="Describe brevemente lo que necesitas..." required></textarea>
+
+        <label for="task-price">Pago ofrecido (MXN)</label>
+        <input type="number" id="task-price" placeholder="Ejemplo: 300" required>
+
+        <button type="submit" class="btn-publish">Publicar tarea</button>
+      </form>
+    </section>
+
+    <section class="task-list">
+      <h2>Mis tareas activas</h2>
+
+      <div class="task-card">
+        <h3>Pintar habitación</h3>
+        <p>Necesito que pinten una habitación de 4x4 con pintura blanca.</p>
+        <div class="task-info">
+          <span>Pago: <strong>$400 MXN</strong></span>
+          <span>Estado: En curso</span>
+        </div>
+        <button class="btn-details">Ver detalles</button>
+      </div>
+
+      <div class="task-card">
+        <h3>Reparar toma de corriente</h3>
+        <p>Un enchufe dejó de funcionar. Busco electricista con experiencia.</p>
+        <div class="task-info">
+          <span>Pago: <strong>$250 MXN</strong></span>
+          <span>Estado: Pendiente</span>
+        </div>
+        <button class="btn-details">Ver detalles</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ChambApp — Conectando talento con oportunidades.</p>
+  </footer>
+</body>
+</html>

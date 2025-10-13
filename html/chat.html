@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChambApp | Chat del Trabajador</title>
+  <link rel="stylesheet" href="/css/chat.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">ChambApp</div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Tareas</a></li>
+        <li><a href="#" class="active">Chat</a></li>
+        <li><a href="#">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="chat-container">
+    <aside class="chat-list">
+      <h2>Conversaciones</h2>
+      <div class="chat-item active">
+        <div class="chat-info">
+          <h3>Juan Pérez</h3>
+          <p>Reparación de fuga de agua</p>
+        </div>
+        <span class="chat-time">10:30 AM</span>
+      </div>
+      <div class="chat-item">
+        <div class="chat-info">
+          <h3>Ana López</h3>
+          <p>Limpieza de oficina</p>
+        </div>
+        <span class="chat-time">Ayer</span>
+      </div>
+      <div class="chat-item">
+        <div class="chat-info">
+          <h3>Marcos Díaz</h3>
+          <p>Instalación de lámpara</p>
+        </div>
+        <span class="chat-time">2 días</span>
+      </div>
+    </aside>
+
+    <section class="chat-box">
+      <div class="chat-header">
+        <h3>Juan Pérez</h3>
+        <p>Reparación de fuga de agua</p>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="message client">
+          <p>Hola, ¿podrías venir hoy en la tarde?</p>
+          <span class="time">10:28 AM</span>
+        </div>
+
+        <div class="message worker">
+          <p>Claro, puedo estar ahí a las 5 PM sin problema.</p>
+          <span class="time">10:29 AM</span>
+        </div>
+
+        <div class="message client">
+          <p>Perfecto, te espero. Gracias.</p>
+          <span class="time">10:30 AM</span>
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Escribe un mensaje...">
+        <button class="btn-send" id="sendBtn">Enviar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ChambApp — Conectando talento con oportunidades.</p>
+  </footer>
+
+  <!-- Enlace al archivo JS externo -->
+  <script src="/js/chat.js"></script>
+</body>
+</html>
+
