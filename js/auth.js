@@ -58,9 +58,9 @@ if (loginForm) {
 
     // Redirigir según el rol
     if (user.role === "worker") {
-      window.location.href = "dashboard-worker.html";
+      window.location.href = "dashboard_worker.html";
     } else if (user.role === "client") {
-      window.location.href = "dashboard-client.html";
+      window.location.href = "dashboard.html";
     } else {
       alert("Rol no válido. Contacta soporte.");
     }
