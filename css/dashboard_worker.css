@@ -161,3 +161,51 @@ footer {
   color: #6b7280;
   font-size: 0.9rem;
 }
+
+/* 🔹 Botones adicionales del trabajador */
+
+/* Botón de aceptar tarea */
+.btn-accept {
+  background-color: #10b981;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.3s ease;
+}
+
+.btn-accept:hover {
+  background-color: #059669;
+  transform: scale(1.03);
+}
+
+/* Botón para marcar como completada */
+.btn-complete {
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.3s ease;
+}
+
+.btn-complete:hover {
+  background-color: #d97706;
+  transform: scale(1.03);
+}
+
+/* Botón cuando ya está completada */
+.btn-done {
+  background-color: #9ca3af;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  opacity: 0.8;
+  cursor: not-allowed;
+}
