@@ -100,6 +100,15 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.remove('btn-complete');
         button.classList.add('btn-done');
       }
+
     });
   });
 });
+
+// Al entrar al chat desde el dashboard del trabajador
+const chatLink = document.querySelector('a[href="/html/chat.html"]');
+if (chatLink) {
+  chatLink.addEventListener('click', () => {
+    localStorage.setItem("userRole", "trabajador");
+  });
+}

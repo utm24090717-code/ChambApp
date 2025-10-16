@@ -55,5 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     taskSection.innerHTML = "";
     taskSection.appendChild(container);
+
   }
 });
+
+// Al entrar al chat desde el dashboard del cliente
+const chatLink = document.querySelector('a[href="/html/chat.html"]');
+if (chatLink) {
+  chatLink.addEventListener('click', () => {
+    localStorage.setItem("userRole", "cliente");
+  });
+}
